@@ -1,0 +1,28 @@
+<?php
+$wizard = "Gandalf";
+require "wizzard.php";
+include "header.php";
+echo $header . PHP_EOL;
+$ringOwner = "Frodo";
+echo $ringOwner . PHP_EOL;
+$ringCreator = "Soron";
+echo $ringCreator . PHP_EOL;
+$countFellows = 9;
+echo $countFellows . PHP_EOL;
+$isRingWorn = true;
+var_dump($isRingWorn) . PHP_EOL;
+$ringOwner = "Sam";
+echo $ringOwner . PHP_EOL;
+$countFellows++;
+echo $countFellows . PHP_EOL;
+$middleEarth = "";
+echo $middleEarth;
+echo "Le porteur de est " . $ringOwner . PHP_EOL;
+$sentence = "L'anneau est porté par $ringOwner";
+echo $sentence . PHP_EOL;
+echo $sentence .= " et $ringCreator le recherche" . PHP_EOL;
+echo strtoupper($ringCreator) . PHP_EOL;
+$ringCreator = strtoupper($ringCreator);
+echo $ringCreator . PHP_EOL;
+include "footer.php";
+echo $footer .PHP_EOL;
